@@ -29,23 +29,31 @@ class Program
         Console.Write("How many contracts to this worker?");
         var contracts = int.Parse(Console.ReadLine());
 
-        if (contracts != 0)
+        for (int i = 1; i <= contracts; i++)
         {
+            Console.WriteLine($"Enter #{i} contract: ");
+            Console.Write("Date (MM/YYYY)");
+            DateTime date = DateTime.Parse(Console.ReadLine());
+            Console.Write("Value per hour: ");
+            double valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Duration (hours): ");
+            var duration = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            HourContract contract = new HourContract(date, valuePerHour, duration);
             
-            Console.WriteLine("Enter #1 contract: ");
-            Console.WriteLine("Date: ");
-            var contractDate = Console.ReadLine();
-            Console.WriteLine("Value per hours: ");
-            var valuePerHour = double.Parse(Console.ReadLine());
-            Console.WriteLine("Duration (hours): ");
-            var duration = Console.ReadLine();
+            worker.AddContract(contract);
         }
-        
-        Console.WriteLine("Enter date and month to calculate income (MM/YY): ");
-        var date = Console.ReadLine();
 
-        Console.WriteLine($"Name: {workerName}");
-        Console.WriteLine($"Department: {departamentName}");
+        Console.WriteLine("Enter month and year to calculate the income (MM/YYYY): ");
+        var monthAndYear = Console.ReadLine();
+
+        var month = int.Parse(monthAndYear.Substring(0, 2));
+        var year = int.Parse(monthAndYear.Substring(3));
+        
+
+        Console.WriteLine($"Name: {worker.Name}");
+        Console.WriteLine($"Department: {worker.Department.Name}");
+        Console.WriteLine($"Income for {monthAndYear}: {worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture)}");
+        
         
     }
 }

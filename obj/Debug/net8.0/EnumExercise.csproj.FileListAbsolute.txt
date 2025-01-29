@@ -12,3 +12,4 @@ C:\Users\danie\RiderProjects\EnumExercise\EnumExercise\obj\Debug\net8.0\refint\E
 C:\Users\danie\RiderProjects\EnumExercise\EnumExercise\obj\Debug\net8.0\EnumExercise.pdb
 C:\Users\danie\RiderProjects\EnumExercise\EnumExercise\obj\Debug\net8.0\EnumExercise.genruntimeconfig.cache
 C:\Users\danie\RiderProjects\EnumExercise\EnumExercise\obj\Debug\net8.0\ref\EnumExercise.dll
+C:\Users\danie\RiderProjects\EnumExercise\EnumExercise\obj\Debug\net8.0\EnumExercise.sourcelink.json

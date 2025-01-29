@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnumExercise")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35bba6e8e6944fe96e1c2c1db56b80dc33e4f96b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnumExercise")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnumExercise")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
